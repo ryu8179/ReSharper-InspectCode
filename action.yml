@@ -97,7 +97,6 @@ runs:
     with:
       dotnet-version: ${{ inputs.dotnet-version }}
   - name: Install ReSharper command line tools
-    shell: bash
     run: dotnet tool install JetBrains.ReSharper.GlobalTools --global --version ${{ inputs.tool-version }}
   - name: Inspect code with ReSharper
     shell: pwsh
